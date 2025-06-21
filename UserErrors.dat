@@ -1,0 +1,23 @@
+ENVT0100,LM:2025/06/21 15:45:56:201,DS:0000000531,CS:16496,MA:40-B0-76-5F-83-58,EI:           
+sRCVersion="7.4.5"
+nNumberOfLabels=4
+Label1 {
+	nError=8010
+	sLabel="error_Greifer"
+	sMessage="Endschalter an Roboter Greifer prüfen!"
+}
+Label2 {
+	nError=8011
+	sLabel="error_Zylinder"
+	sMessage="Enschalter an Roboter Zylinder prüfen!"
+}
+Label3 {
+	nError=8012
+	sLabel="error_WT"
+	sMessage="Endschalter Werkzeugträger prüfen!"
+}
+Label4 {
+	nError=8013
+	sLabel="error_Part_Type"
+	sMessage="Teiletyp nicht vorhanden"
+}
