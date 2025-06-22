@@ -8,8 +8,11 @@ Function Simulation
     Integer lastActivePos
     lastActivePos = -1
 	
+	'Typen Wahl 
 	SetSw 752, On
 	SetSw 753, On
+	SetSw 754, Off
+	
     ' --- 1) Feste Bit-Masken 1,2,4,…,128 ---
     masks(0) = 1
     masks(1) = 2

@@ -2,12 +2,12 @@
 'y und x = wie groß ist die abzufahrende fläche?
 'offsetX und offsetY = wie groß soll der abstand von den linien zur fläche sein?
 ' --> soll bei 0,0 angefangen werden oder nicht?
-Function f_DriveGridLines(rows As Integer, y As Double, x As Double, offsetX As Double, offsetY As Double)
+Function f_DriveGridLines(rows As Integer, x As Double, y As Double, offsetX As Double, offsetY As Double)
 	Double abstand_Y
 	Integer currentLine
 	
 	currentLine = 1
-	
+
 	BMove XY(-offsetX, offsetY, 0, 0)
 	
 	If rows = 1 Then
@@ -15,7 +15,7 @@ Function f_DriveGridLines(rows As Integer, y As Double, x As Double, offsetX As 
 	Else
 		abstand_Y = (y - (2 * offsetY)) / (rows - 1)
 	EndIf
-	
+
 	Do While currentLine <= rows
 		If currentLine Mod 2 = 1 Then
 			BMove XY(-x + (2 * offsetX), 0, 0, 0)
@@ -28,6 +28,7 @@ Function f_DriveGridLines(rows As Integer, y As Double, x As Double, offsetX As 
 		EndIf
 		currentLine = currentLine + 1
 	Loop
+
 Fend
 
 

@@ -1,11 +1,11 @@
-ENVT0100,LM:2025/06/19 15:33:01:540,DS:0000005828,CS:05441,MA:40-B0-76-5F-83-58,EI:           
+ENVT0100,LM:2025/06/22 07:33:17:125,DS:0000006136,CS:23935,MA:40-B0-76-5F-83-58,EI:           
 sVersion="2.0.0"
 nDisplayMode=2
 bDisplayR=False
 bDisplayS=False
 bDisplayT=False
 nNumberOfJoints=4
-nNumberOfPoints=19
+nNumberOfPoints=20
 Point1 {
 	nNumber=0
 	sLabel="pGSD"
@@ -397,6 +397,32 @@ Point15 {
 	bSimVisible=False
 }
 Point16 {
+	nNumber=18
+	sLabel="ursprung_Part"
+	sDescription=""
+	nUndefined=448
+	rX=0
+	rY=0
+	rZ=0
+	rU=0
+	rV=0
+	rW=0
+	rR=0
+	rS=0
+	rT=0
+	nLocal=1
+	nHand=2
+	nElbow=1
+	nWrist=1
+	nJ1Flag=0
+	nJ2Flag=0
+	nJ4Flag=0
+	nJ6Flag=0
+	rJ1Angle=0
+	rJ4Angle=0
+	bSimVisible=False
+}
+Point17 {
 	nNumber=19
 	sLabel="gewinde1"
 	sDescription=""
@@ -422,7 +448,7 @@ Point16 {
 	rJ4Angle=0
 	bSimVisible=False
 }
-Point17 {
+Point18 {
 	nNumber=20
 	sLabel="gewinde2"
 	sDescription=""
@@ -448,15 +474,15 @@ Point17 {
 	rJ4Angle=0
 	bSimVisible=False
 }
-Point18 {
+Point19 {
 	nNumber=22
-	sLabel=""
+	sLabel="Nest1_180"
 	sDescription=""
-	nUndefined=262143
-	rX=0
-	rY=0
+	nUndefined=0
+	rX=459.026
+	rY=387.287
 	rZ=0
-	rU=0
+	rU=-0.051
 	rV=0
 	rW=0
 	rR=0
@@ -474,7 +500,7 @@ Point18 {
 	rJ4Angle=0
 	bSimVisible=False
 }
-Point19 {
+Point20 {
 	nNumber=23
 	sLabel=""
 	sDescription=""

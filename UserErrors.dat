@@ -1,6 +1,6 @@
-ENVT0100,LM:2025/06/21 15:45:56:201,DS:0000000531,CS:16496,MA:40-B0-76-5F-83-58,EI:           
+ENVT0100,LM:2025/06/22 06:58:53:743,DS:0000000627,CS:13433,MA:40-B0-76-5F-83-58,EI:           
 sRCVersion="7.4.5"
-nNumberOfLabels=4
+nNumberOfLabels=5
 Label1 {
 	nError=8010
 	sLabel="error_Greifer"
@@ -20,4 +20,9 @@ Label4 {
 	nError=8013
 	sLabel="error_Part_Type"
 	sMessage="Teiletyp nicht vorhanden"
+}
+Label5 {
+	nError=8014
+	sLabel="error_WT_Index"
+	sMessage="Falscher WT_INDEX uebergeben!"
 }
