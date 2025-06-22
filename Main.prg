@@ -1,11 +1,12 @@
 Function main
 	Xqt Simulation		' Nötig für I/O Simulation
-
+	SpeedFactor 100		' like overwrite geschwindigkeit
 	Call init
 	
+
 	Call move_Grundstellung		' gs fahrt + ggf. wenn Teil in GRF -> fahrt zu niO
 	Call checkWTs 				' prüft WT endschalter + ggf. vorhandene Teile zu niO
-
+	
 	Integer i
 	For i = 1 To 2
 		Call move_PickPart_from_belt
@@ -18,7 +19,8 @@ Function main
 	Next
 	
 	For i = 2 To 1 Step -1
-		Call move_WT_putzen(G_ALLOWED_WTs(i))
+		Call move_WT_putzen(G_ALLOWED_WTs(i))	'oberseite "putzen"
+		Call f_WT_Punkte_oberseite(G_ALLOWED_WTs(i))
 	Next
 	
 	For i = 1 To 2
@@ -41,8 +43,8 @@ Function init
 	
 	Speed 100
 	Accel 100, 100
-	SpeedS 2000
- 	AccelS 5000
+	SpeedS 2000			'max 2000
+ 	AccelS 25000		'max 25000
 
 	Power High
 Fend
@@ -145,7 +147,7 @@ Function move_to_nio
 	Wait 0.2
 	Call y_rZylinder(0)
 	Wait 0.3
-	Go Here :Z(0)
+	Go Here +Z(20)
 	
 Fend
 
@@ -177,18 +179,38 @@ Function move_PlacePart_to_WT(PART_INDEX As Integer)
 
 Fend
 
+Function f_WT_Punkte_oberseite(WT_INDEX As UByte)
+	Select G_CURRENTPARTTYPE
+		Case 1
+			Print "punkte nicht definiert für Teil: " + G_CURRENTPARTNAME$(G_CURRENTPARTTYPE)
+		Case 2
+			Print "punkte nicht definiert für Teil: " + G_CURRENTPARTNAME$(G_CURRENTPARTTYPE)
+		Case 3
+			Call move_WT_Punkte_oberseite_10312(WT_INDEX)
+		Case 4
+			Print "punkte nicht definiert für Teil: " + G_CURRENTPARTNAME$(G_CURRENTPARTTYPE)
+		Case 5
+			Print "punkte nicht definiert für Teil: " + G_CURRENTPARTNAME$(G_CURRENTPARTTYPE)
+		Default
+			Print "f_WT_Punkte_oberseite G_CURRENTPARTTYPE:" + Str$(G_CURRENTPARTTYPE) + " nicht definiert"
+			Error error_Part_Type
+	Send
+Fend
+
 Function move_WT_putzen(WT_INDEX As UByte)
 	Print "Strahle oberflächlich WT_INDEX# " + Str$(WT_INDEX) + " ab"
 	Tool 1
-	Jump ursprung_Part :Z(0) /(WT_INDEX)
-	Call grid_for_PartType(20) '+0,41 bis +0,44 pro linie
+	Go Here +Z(10)
+	Go ursprung_Part +Z(10) /(WT_INDEX)
+	Go Here -Z(10)
+	Call grid_for_PartType(7) '+0,41 bis +0,44 pro linie
 Fend
 
 Function grid_for_PartType(linien As Integer) 'ff +0,8sec unterschied bei 12 linien
 	TmReset (0)
 	If G_ALLOWED_WTs(1) = 1 Or G_ALLOWED_WTs(1) = 2 Then
 		Call f_DriveGridLines(linien, 83, 45, 3, 3)
-	ElseIf G_ALLOWED_WTs(1) = G_ALLOWED_WTs(1) = 3 Or 4 Then
+	ElseIf G_ALLOWED_WTs(1) = 3 Or G_ALLOWED_WTs(1) = 3 Then
 		Call f_DriveGridLines(linien, 67.5, 45, 3, 3)
 	EndIf
 	Print Tmr(0)

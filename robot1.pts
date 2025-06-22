@@ -1,11 +1,11 @@
-ENVT0100,LM:2025/06/22 07:33:17:125,DS:0000006136,CS:23935,MA:40-B0-76-5F-83-58,EI:           
+ENVT0100,LM:2025/06/22 17:44:38:525,DS:0000007627,CS:14932,MA:40-B0-76-5F-83-58,EI:           
 sVersion="2.0.0"
 nDisplayMode=2
 bDisplayR=False
 bDisplayS=False
 bDisplayT=False
 nNumberOfJoints=4
-nNumberOfPoints=20
+nNumberOfPoints=25
 Point1 {
 	nNumber=0
 	sLabel="pGSD"
@@ -30,7 +30,7 @@ Point1 {
 	nJ6Flag=0
 	rJ1Angle=0
 	rJ4Angle=0
-	bSimVisible=True
+	bSimVisible=False
 }
 Point2 {
 	nNumber=3
@@ -56,7 +56,7 @@ Point2 {
 	nJ6Flag=0
 	rJ1Angle=0
 	rJ4Angle=0
-	bSimVisible=True
+	bSimVisible=False
 }
 Point3 {
 	nNumber=4
@@ -82,7 +82,7 @@ Point3 {
 	nJ6Flag=0
 	rJ1Angle=0
 	rJ4Angle=0
-	bSimVisible=True
+	bSimVisible=False
 }
 Point4 {
 	nNumber=5
@@ -108,7 +108,7 @@ Point4 {
 	nJ6Flag=0
 	rJ1Angle=0
 	rJ4Angle=0
-	bSimVisible=True
+	bSimVisible=False
 }
 Point5 {
 	nNumber=6
@@ -134,7 +134,7 @@ Point5 {
 	nJ6Flag=0
 	rJ1Angle=0
 	rJ4Angle=0
-	bSimVisible=True
+	bSimVisible=False
 }
 Point6 {
 	nNumber=7
@@ -186,7 +186,7 @@ Point7 {
 	nJ6Flag=0
 	rJ1Angle=0
 	rJ4Angle=0
-	bSimVisible=True
+	bSimVisible=False
 }
 Point8 {
 	nNumber=9
@@ -238,7 +238,7 @@ Point9 {
 	nJ6Flag=0
 	rJ1Angle=0
 	rJ4Angle=0
-	bSimVisible=True
+	bSimVisible=False
 }
 Point10 {
 	nNumber=11
@@ -290,7 +290,7 @@ Point11 {
 	nJ6Flag=0
 	rJ1Angle=0
 	rJ4Angle=0
-	bSimVisible=True
+	bSimVisible=False
 }
 Point12 {
 	nNumber=13
@@ -342,7 +342,7 @@ Point13 {
 	nJ6Flag=0
 	rJ1Angle=0
 	rJ4Angle=0
-	bSimVisible=True
+	bSimVisible=False
 }
 Point14 {
 	nNumber=16
@@ -516,6 +516,136 @@ Point20 {
 	rT=0
 	nLocal=0
 	nHand=1
+	nElbow=1
+	nWrist=1
+	nJ1Flag=0
+	nJ2Flag=0
+	nJ4Flag=0
+	nJ6Flag=0
+	rJ1Angle=0
+	rJ4Angle=0
+	bSimVisible=False
+}
+Point21 {
+	nNumber=25
+	sLabel="platzhalter_10312_1"
+	sDescription=""
+	nUndefined=448
+	rX=-20
+	rY=10
+	rZ=0
+	rU=0
+	rV=0
+	rW=0
+	rR=0
+	rS=0
+	rT=0
+	nLocal=1
+	nHand=2
+	nElbow=1
+	nWrist=1
+	nJ1Flag=0
+	nJ2Flag=0
+	nJ4Flag=0
+	nJ6Flag=0
+	rJ1Angle=0
+	rJ4Angle=0
+	bSimVisible=False
+}
+Point22 {
+	nNumber=26
+	sLabel="platzhalter_10312_2"
+	sDescription=""
+	nUndefined=448
+	rX=-20
+	rY=35
+	rZ=0
+	rU=0
+	rV=0
+	rW=0
+	rR=0
+	rS=0
+	rT=0
+	nLocal=1
+	nHand=2
+	nElbow=1
+	nWrist=1
+	nJ1Flag=0
+	nJ2Flag=0
+	nJ4Flag=0
+	nJ6Flag=0
+	rJ1Angle=0
+	rJ4Angle=0
+	bSimVisible=False
+}
+Point23 {
+	nNumber=27
+	sLabel="platzhalter_10312_3"
+	sDescription=""
+	nUndefined=448
+	rX=-70
+	rY=35
+	rZ=0
+	rU=0
+	rV=0
+	rW=0
+	rR=0
+	rS=0
+	rT=0
+	nLocal=1
+	nHand=2
+	nElbow=1
+	nWrist=1
+	nJ1Flag=0
+	nJ2Flag=0
+	nJ4Flag=0
+	nJ6Flag=0
+	rJ1Angle=0
+	rJ4Angle=0
+	bSimVisible=False
+}
+Point24 {
+	nNumber=28
+	sLabel="platzhalter_10312_4"
+	sDescription=""
+	nUndefined=448
+	rX=-70
+	rY=10
+	rZ=0
+	rU=0
+	rV=0
+	rW=0
+	rR=0
+	rS=0
+	rT=0
+	nLocal=1
+	nHand=2
+	nElbow=1
+	nWrist=1
+	nJ1Flag=0
+	nJ2Flag=0
+	nJ4Flag=0
+	nJ6Flag=0
+	rJ1Angle=0
+	rJ4Angle=0
+	bSimVisible=False
+}
+Point25 {
+	nNumber=29
+	sLabel="platzhalter_10312_5"
+	sDescription=""
+	nUndefined=448
+	rX=-45
+	rY=22.5
+	rZ=0
+	rU=0
+	rV=0
+	rW=0
+	rR=0
+	rS=0
+	rT=0
+	nLocal=1
+	nHand=2
 	nElbow=1
 	nWrist=1
 	nJ1Flag=0
