@@ -1,28 +1,43 @@
-ENVT0100,LM:2025/06/22 06:58:53:743,DS:0000000627,CS:13433,MA:40-B0-76-5F-83-58,EI:           
-sRCVersion="7.4.5"
-nNumberOfLabels=5
+ENVT0100,LM:2025/06/29 17:58:16:023,DS:0000001077,CS:30563,MA:40-B0-76-5F-83-58,EI:           
+sRCVersion="8.0.0"
 Label1 {
-	nError=8010
-	sLabel="error_Greifer"
-	sMessage="Endschalter an Roboter Greifer prüfen!"
+	nError=8000
+	sLabel="err_no_typ"
+	sMessage="Kein Teile Typ von SPS vorgegeben. / No selectet part typ from SPS. Check Input 552-556"
 }
 Label2 {
-	nError=8011
-	sLabel="error_Zylinder"
-	sMessage="Enschalter an Roboter Zylinder prüfen!"
+	nError=8001
+	sLabel="err_more_typs"
+	sMessage="Mehrere Teile Typen von SPS vorgegeben. / More then one selectet part types from SPS"
 }
 Label3 {
-	nError=8012
-	sLabel="error_WT"
-	sMessage="Endschalter Werkzeugträger prüfen!"
+	nError=8002
+	sLabel="err_Zylinder"
+	sMessage="Endschalter y_rZylinder GS oder AS nicht erreicht"
 }
 Label4 {
-	nError=8013
-	sLabel="error_Part_Type"
-	sMessage="Teiletyp nicht vorhanden"
+	nError=8003
+	sLabel="err_Greifer"
+	sMessage="Endschalter y_rGreifer GS oder AS nicht erreicht"
 }
 Label5 {
-	nError=8014
-	sLabel="error_WT_Index"
-	sMessage="Falscher WT_INDEX uebergeben!"
+	nError=8004
+	sLabel="err_WT"
+	sMessage="Endschalter Werkzeugträger GS oder AS nicht erreicht"
 }
+Label6 {
+	nError=8005
+	sLabel="err_WT_Index"
+	sMessage="Kein valider WT Index übergeben"
+}
+Label7 {
+	nError=8006
+	sLabel="err_"
+	sMessage="Allgemein / Platzhalter"
+}
+Label8 {
+	nError=8007
+	sLabel="err_rot_wt"
+	sMessage="Werkzeugträger  wurde nicht gedreht oder bestätigung von SPS fehlt"
+}
+nNumberOfLabels=8

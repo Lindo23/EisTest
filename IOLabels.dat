@@ -1,180 +1,180 @@
-ENVT0100,LM:2025/06/20 15:13:18:495,DS:0000005652,CS:56885,MA:40-B0-76-5F-83-58,EI:           
-sRCVersion="7.4.5"
+ENVT0100,LM:2025/06/29 12:46:16:413,DS:0000005820,CS:22685,MA:40-B0-76-5F-83-58,EI:           
+sRCVersion="8.0.0"
 InputBitLabels {
 	nNumberOfLabels=35
 	Label1 {
-		nBit=8
-		sLabel="i_Teil_auf_Band_rdy"
-		sDescription="Teil liegt zum abholen breit"
-	}
-	Label2 {
 		nBit=525
 		sLabel="Typwechsel"
 		sDescription=""
 	}
-	Label3 {
+	Label2 {
 		nBit=526
 		sLabel="GST_anforderung"
 		sDescription=""
 	}
-	Label4 {
+	Label3 {
 		nBit=527
 		sLabel="Auto"
 		sDescription=""
 	}
-	Label5 {
+	Label4 {
 		nBit=528
 		sLabel="Greifer_GS"
 		sDescription=""
 	}
-	Label6 {
+	Label5 {
 		nBit=529
 		sLabel="Greifer_AS"
 		sDescription=""
 	}
-	Label7 {
+	Label6 {
 		nBit=530
 		sLabel="LEV_GS"
 		sDescription=""
 	}
-	Label8 {
+	Label7 {
 		nBit=531
 		sLabel="LEV_AS"
 		sDescription=""
 	}
-	Label9 {
+	Label8 {
 		nBit=532
 		sLabel="Nest1_GS"
 		sDescription=""
 	}
-	Label10 {
+	Label9 {
 		nBit=533
 		sLabel="Nest1_AS"
 		sDescription=""
 	}
-	Label11 {
+	Label10 {
 		nBit=534
 		sLabel="Nest2_GS"
 		sDescription=""
 	}
-	Label12 {
+	Label11 {
 		nBit=535
 		sLabel="Nest2_AS"
 		sDescription=""
 	}
-	Label13 {
+	Label12 {
 		nBit=536
 		sLabel="Frg_abholen"
-		sDescription="Teil kann von Förderband abgeholt werden"
+		sDescription=""
 	}
-	Label14 {
+	Label13 {
 		nBit=537
 		sLabel="Auslauf_voll"
 		sDescription=""
 	}
-	Label15 {
+	Label14 {
 		nBit=538
 		sLabel="Vision_IO"
 		sDescription=""
 	}
-	Label16 {
+	Label15 {
 		nBit=539
 		sLabel="Vision_NIO"
 		sDescription=""
 	}
-	Label17 {
+	Label16 {
 		nBit=540
 		sLabel="Vision_drehen"
 		sDescription=""
 	}
-	Label18 {
+	Label17 {
 		nBit=541
 		sLabel="Nest1_einlegen"
 		sDescription=""
 	}
-	Label19 {
+	Label18 {
 		nBit=542
 		sLabel="Nest2_einlegen"
 		sDescription=""
 	}
-	Label20 {
+	Label19 {
 		nBit=543
 		sLabel="Nest3_einlegen"
 		sDescription=""
 	}
-	Label21 {
+	Label20 {
 		nBit=544
 		sLabel="Nest4_einlegen"
 		sDescription=""
 	}
-	Label22 {
+	Label21 {
 		nBit=545
-		sLabel="Nest_wurde_gedreht"
+		sLabel="Nest_wurde_gerdreht"
 		sDescription=""
 	}
-	Label23 {
+	Label22 {
 		nBit=546
 		sLabel="Nest_GST"
 		sDescription=""
 	}
-	Label24 {
+	Label23 {
 		nBit=548
 		sLabel="Nest3_GS"
 		sDescription=""
 	}
-	Label25 {
+	Label24 {
 		nBit=549
 		sLabel="Nest3_AS"
 		sDescription=""
 	}
-	Label26 {
+	Label25 {
 		nBit=550
 		sLabel="Nest4_GS"
 		sDescription=""
 	}
-	Label27 {
+	Label26 {
 		nBit=551
 		sLabel="Nest4_AS"
 		sDescription=""
 	}
-	Label28 {
+	Label27 {
 		nBit=552
 		sLabel="Typ1"
 		sDescription=""
 	}
-	Label29 {
+	Label28 {
 		nBit=553
 		sLabel="Typ2"
 		sDescription=""
 	}
-	Label30 {
+	Label29 {
 		nBit=554
 		sLabel="Typ3"
 		sDescription=""
 	}
-	Label31 {
+	Label30 {
 		nBit=555
 		sLabel="Typ4"
 		sDescription=""
 	}
-	Label32 {
+	Label31 {
 		nBit=556
 		sLabel="Typ5"
 		sDescription=""
 	}
-	Label33 {
+	Label32 {
 		nBit=560
 		sLabel="Leer_machen"
 		sDescription=""
 	}
-	Label34 {
+	Label33 {
 		nBit=561
-		sLabel="anfahren"
+		sLabel="anfahrt"
+		sDescription=""
+	}
+	Label34 {
+		nBit=562
+		sLabel="NIO_voll"
 		sDescription=""
 	}
 	Label35 {
-		nBit=562
-		sLabel="NIO_voll"
+		nBit=564
+		sLabel="einlegen_fertig_sps"
 		sDescription=""
 	}
 }
@@ -184,14 +184,14 @@ InputByteLabels {
 InputWordLabels {
 	nNumberOfLabels=4
 	Label1 {
-		nWord=40
-		sLabel="Pos_rckgabe_vonSPS"
+		nWord=41
+		sLabel="FG_wert_SPS"
 		sDescription=""
 	}
 	Label2 {
-		nWord=41
-		sLabel="FRG_wert_SPS"
-		sDescription=""
+		nWord=42
+		sLabel="WT_Position_antwort"
+		sDescription="Auf welcher Position befinden sich die Werkzeugträger"
 	}
 	Label3 {
 		nWord=46
@@ -201,7 +201,7 @@ InputWordLabels {
 	Label4 {
 		nWord=47
 		sLabel="Typnr"
-		sDescription="Welcher Artikel wird bearbeitet= 1-5"
+		sDescription=""
 	}
 }
 OutputBitLabels {
@@ -311,7 +311,22 @@ OutputByteLabels {
 	nNumberOfLabels=0
 }
 OutputWordLabels {
-	nNumberOfLabels=0
+	nNumberOfLabels=3
+	Label1 {
+		nWord=41
+		sLabel="Rckgabewert_SPS"
+		sDescription=""
+	}
+	Label2 {
+		nWord=42
+		sLabel="Pos_vorgabe"
+		sDescription=""
+	}
+	Label3 {
+		nWord=46
+		sLabel="Coldjet_senden"
+		sDescription=""
+	}
 }
 MemoryBitLabels {
 	nNumberOfLabels=12
